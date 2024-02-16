@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +12,11 @@ import { MultiplicationComponent } from './multiplication/multiplication.compone
 import { BmiComponent } from './bmi/bmi.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { AverageComponent } from './average/average.component';
+import { LengthconvertComponent } from './lengthconvert/lengthconvert.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { EmiComponent } from './emi/emi.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +28,18 @@ import { AverageComponent } from './average/average.component';
     MultiplicationComponent,
     BmiComponent,
     TemperatureComponent,
-    AverageComponent
+    AverageComponent,
+    LengthconvertComponent,
+    RegisterComponent,
+    LoginComponent,
+    EmiComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
